@@ -47,6 +47,10 @@ header {
   gap: 1rem;
 }
 
+.menu-icon {
+  cursor: pointer;
+}
+
 .cart-profile {
   gap: 1.5rem;
 }
@@ -193,5 +197,38 @@ main {
 .add-to-cart {
   font-weight: 600;
   font-size: 1rem;
+  color: var(--color-very-dark-blue);
+}
+
+#menu {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--color-white);
+  width: 60dvw;
+  height: 100dvh;
+  padding: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: .9rem;
+  left: -60dvw;
+  transition: transform 0.2s ease;
+}
+
+#menu.visible {
+  transform: translateX(60dvw);
+}
+
+.close-menu-btn svg {
+  cursor: pointer;
+}
+
+#menu li:first-of-type {
+  margin-bottom: 2rem;
+}
+
+#menu li {
+  margin-bottom: 1rem;
+}
+#menu a {
   color: var(--color-very-dark-blue);
 }
