@@ -209,6 +209,11 @@ main {
   margin: 1rem 0;
 }
 
+.add-to-cart-btn.inactive {
+  background-color: var(--color-grayish-blue);
+  cursor: default;
+}
+
 .add-to-cart {
   font-weight: 600;
   font-size: 1rem;
@@ -320,15 +325,17 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  color: var(--color-dark-grayish-blue);
 }
 
-.product-thumb-description > span {
-  color: var(--color-dark-grayish-blue);
+.product-thumb-description > div {
   font-size: 1rem;
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
 }
 
-.final-price {
+.final-price, .product-thumb-description > div > span:last-child {
   color: black;
   font-weight: bold;
 }
