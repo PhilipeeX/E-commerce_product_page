@@ -63,6 +63,18 @@ header {
 
 .cart-icon {
   cursor: pointer;
+  position: relative;
+}
+
+.cart-product-quantity {
+  position: absolute;
+  font-size: .5rem;
+  right: .1rem;
+  top: -.2rem;
+  color: aliceblue;
+  background-color: var(--color-primary-orange);
+  border-radius: .4rem;
+  padding: .1rem .3rem;
 }
 
 h1 {
@@ -323,8 +335,8 @@ main {
   padding: 0 .5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: space-evenly;
+  gap: .5rem;
   color: var(--color-dark-grayish-blue);
 }
 
