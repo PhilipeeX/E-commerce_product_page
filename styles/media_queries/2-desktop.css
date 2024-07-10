@@ -74,6 +74,10 @@
   }
 
   .product-images > .product-preview:hover {
+    opacity: 50%;
+  }
+
+  .image-active {
     border: 1px solid black;
   }
 
