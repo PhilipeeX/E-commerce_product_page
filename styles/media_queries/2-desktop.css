@@ -109,4 +109,32 @@
     cursor: pointer;
   }
 
+  #cart-floating {
+    width: 20rem;
+    right: 5px;
+    left: auto;
+    overflow: clip;
+  }
+
+  .product-thumb-discard, .checkout {
+    cursor: pointer;
+  }
+
+  .how-much {
+    padding: 0;
+    height: auto;
+    align-items: stretch;
+  }
+
+  .how-much > div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+
+  .how-much > span {
+    align-self: center;
+  }
+
 }
