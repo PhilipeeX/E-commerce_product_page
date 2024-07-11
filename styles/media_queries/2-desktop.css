@@ -2,10 +2,32 @@
   body {
     max-width: 840px;
     margin: 0 auto;
+    height: 100dvh;
+    position: relative;
+    backdrop-filter: blur();
   }
 
-  .menu-logo {
-    /*padding: 0;*/
+  #lightbox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+  }
+
+  .lightbox__main-image {
+    border-radius: 1rem;
+  }
+
+  .lightbox__main-image > img {
+    width: 100%;
+  }
+
+  .lightbox__thumbs {
+    padding: 1rem;
+  }
+
+  .lightbox__thumb {
+    width: 5rem;
   }
 
   .menu-icon {
@@ -40,8 +62,9 @@
   }
 
   main {
-    margin-top: 4rem;
+    padding-top: 4rem;
     flex-direction: row;
+    height: 40rem;
   }
 
   .product, .product-description {
