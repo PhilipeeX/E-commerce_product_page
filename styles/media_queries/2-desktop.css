@@ -4,6 +4,10 @@
     height: 100dvh;
   }
 
+  #menu {
+    display: none;
+  }
+
   #lightbox {
     position: absolute;
     display: flex;
@@ -13,27 +17,37 @@
     z-index: 3;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .lightbox__exit {
+    width: 22rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 1rem 0;
+    color: white;
   }
 
   .lightbox__main-image {
-    border: 1px solid red;
-    width: 30%;
+    width: 22rem;
   }
 
   .lightbox__main-image > img {
-    border: 1px solid yellow;
     border-radius: 1rem;
     width: 100%;
   }
 
   .lightbox__thumbs {
-    border: 1px solid blue;
-    padding: 1rem;
+    width: 20rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .lightbox__thumb {
-    border: 1px solid aqua;
-    width: 5rem;
+    width: 4rem;
+    border-radius: .5rem;
   }
 
   .menu-icon {
