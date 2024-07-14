@@ -1,11 +1,89 @@
 @media screen and (min-width: 768px) {
   body {
-    max-width: 840px;
     margin: 0 auto;
+    height: 100dvh;
   }
 
-  .menu-logo {
-    /*padding: 0;*/
+  #menu {
+    display: none;
+  }
+
+  .lightbox {
+    padding-top: 2.5rem;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+
+  .lightbox--visible {
+    display: flex;
+  }
+
+  .lightbox__exit {
+    width: 24rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 1rem 0;
+    color: white;
+  }
+
+  .lightbox__main {
+    width: 24rem;
+    display: flex;
+    position: relative;
+  }
+
+  .lightbox__main_image {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .lightbox__arrow_right, .lightbox__arrow_left {
+    top: 45%;
+    z-index: 3;
+    position: absolute;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--color-light-grayish-blue);
+  }
+
+  .lightbox__arrow_right:active, .lightbox__arrow_left:active {
+    padding: .8rem;
+  }
+  .lightbox__arrow_left {
+    left: -1.5rem;
+  }
+
+  .lightbox__arrow_right {
+    right: -1.5rem;
+  }
+
+  .lightbox__thumbs {
+    width: 22rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lightbox__thumb {
+    width: 4.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+  }
+
+  .lightbox__thumb:hover {
+    opacity: 0.7;
   }
 
   .menu-icon {
@@ -13,6 +91,8 @@
   }
 
   header {
+    max-width: 840px;
+    margin: 0 auto;
     padding: 0;
     border-bottom: solid 2px var(--color-light-grayish-blue);
   }
@@ -40,8 +120,11 @@
   }
 
   main {
-    margin-top: 4rem;
+    margin: 0 auto;
+    max-width: 840px;
+    padding-top: 4rem;
     flex-direction: row;
+    height: auto;
   }
 
   .product, .product-description {
@@ -61,6 +144,10 @@
     border-radius: .7rem;
   }
 
+  .product-image {
+    cursor: pointer;
+  }
+
   .product-images {
     display: flex;
     justify-content: space-between;
@@ -78,6 +165,8 @@
   }
 
   .image-active {
+    background-color: white;
+    opacity: 0.6;
     border: 1px solid black;
   }
 

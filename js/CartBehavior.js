@@ -113,7 +113,6 @@ addItemToCartBtn.addEventListener("click", () => {
       productTitles[i].parentElement.querySelector('.thumb-product-quantity').innerText = productQuantity
       document.querySelector('.cart-product-quantity').innerText = productQuantity
       productTitles[i].parentElement.querySelector('.final-price').innerText = finalPriceCalculated.toFixed(2)
-      break
     }
   }
 })
