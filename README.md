@@ -6,7 +6,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots and Gifs](#Screenshots-and-Gifs)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -29,14 +29,13 @@ Users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-### Screenshot
+### Screenshots and Gifs
 
-![Image](https://github.com/PhilipeeX/E-commerce_product_page/assets/85847179/04bcf069-a8a2-4f52-bc8b-fcc3d5e83120)
-
+![Image](https://github.com/user-attachments/assets/53fd9c76-5f18-4021-9bc0-491fd5feaf03)
 ### Links
 
-- Solution URL: [Soon](#)
-- Live Site URL: [Soon](#)
+- Solution URL: [You can see the tasks by clicking here](https://github.com/users/PhilipeeX/projects/42)
+- Live Site URL: [E-commerce product page](https://e-commerce-product-page-drab.vercel.app/)
 
 ## My process
 
@@ -55,7 +54,7 @@ figma it can lead more than we think.
 
 ### Continued development
 
-The next steps I'm planning to is to consume some API's using Vanilla JS with the knowledge which I already have, so the idea is to combine everything and put it in a project.
+The next steps I'm planning to: Consume some API's using Vanilla JS with the knowledge which I already have, so the idea is to combine everything and put it in a project.
 
 ### Useful resources
 
