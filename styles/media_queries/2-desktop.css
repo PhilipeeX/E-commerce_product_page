@@ -33,13 +33,13 @@
     color: white;
   }
 
-  .lightbox__main-image {
+  .lightbox__main {
     width: 24rem;
     display: flex;
     position: relative;
   }
 
-  .lightbox__main-image > img {
+  .lightbox__main_image {
     border-radius: 1rem;
     width: 100%;
   }
@@ -58,6 +58,9 @@
     border: 2px solid var(--color-light-grayish-blue);
   }
 
+  .lightbox__arrow_right:active, .lightbox__arrow_left:active {
+    padding: .8rem;
+  }
   .lightbox__arrow_left {
     left: -1.5rem;
   }
@@ -76,6 +79,11 @@
   .lightbox__thumb {
     width: 4.5rem;
     border-radius: .5rem;
+    cursor: pointer;
+  }
+
+  .lightbox__thumb:hover {
+    opacity: 0.7;
   }
 
   .menu-icon {
@@ -157,6 +165,8 @@
   }
 
   .image-active {
+    background-color: white;
+    opacity: 0.6;
     border: 1px solid black;
   }
 
