@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Kumbh Sans';
   src: url('styles/fonts/kumbh_sans/static/KumbhSans-Regular.ttf') format('ttf'),
-    url('styles/fonts/kumbh_sans/static/KumbhSans-Regular.ttf') format('ttf');
+  url('styles/fonts/kumbh_sans/static/KumbhSans-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'Kumbh Sans';
   src: url('styles/fonts/kumbh_sans/static/KumbhSans-SemiBold.ttf') format('ttf'),
-    url('styles/fonts/kumbh_sans/static/KumbhSans-SemiBold.ttf') format('ttf');
+  url('styles/fonts/kumbh_sans/static/KumbhSans-SemiBold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
@@ -29,6 +29,10 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   position: relative;
+}
+
+.lightbox {
+  display: none;
 }
 
 header {
@@ -47,6 +51,10 @@ header {
 .cart-profile {
   display: flex;
   align-items: center;
+}
+
+.menu-desktop {
+  display: none;
 }
 
 .menu-logo {
@@ -99,7 +107,7 @@ main {
   display: flex;
 }
 
-.product>img {
+.product > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -139,7 +147,7 @@ main {
   padding: 1.5rem;
 }
 
-.description-text>p:first-of-type {
+.description-text > p:first-of-type {
   color: var(--color-dark-grayish-blue);
   font-size: .8rem;
   letter-spacing: .15rem;
@@ -147,7 +155,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.description-text>h2 {
+.description-text > h2 {
   font-size: 1.8rem;
   font-weight: 600;
   margin: .9rem 0;
@@ -262,6 +270,7 @@ main {
 #menu li {
   margin-bottom: 1rem;
 }
+
 #menu a {
   color: var(--color-very-dark-blue);
 }
@@ -280,9 +289,9 @@ main {
   z-index: 2;
   border-radius: .7rem;
   transition: transform 0.2s ease;
-  -webkit-box-shadow: 2px 1px 7px 0 rgba(0,0,0,0.56);
-  -moz-box-shadow: 2px 1px 7px 0 rgba(0,0,0,0.56);
-  box-shadow: 2px 1px 7px 0 rgba(0,0,0,0.56);
+  -webkit-box-shadow: 2px 1px 7px 0 rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 2px 1px 7px 0 rgba(0, 0, 0, 0.56);
+  box-shadow: 2px 1px 7px 0 rgba(0, 0, 0, 0.56);
   overflow: scroll;
 }
 
@@ -353,7 +362,6 @@ main {
 }
 
 .checkout {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
